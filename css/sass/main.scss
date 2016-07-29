@@ -192,7 +192,19 @@ input{
 	-webkit-user-select: none;
 	user-select: none;
 }
-//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-.main{
-	@include my-button();
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+$color1: #FF7100;
+$color2: #FFB000;
+$color3: #1437AD;
+$color4: #009B95;
+
+$color5: #DF9A62;
+$color6: #DFB862;
+$color7: #4C5E97;
+$color8: #3C8885;
+
+$textcolor: #204056;
+header{
+	
+
 }

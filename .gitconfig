@@ -1,0 +1,5 @@
+[credential]
+        helper = cache --timeout=<12600>
+[user]
+        name = Romanovskiy Dmitriy
+        email = Dmitriy_r_f@mail.ru
