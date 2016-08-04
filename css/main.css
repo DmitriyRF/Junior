@@ -3,7 +3,7 @@
 @media only screen and (max-width: 2600px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 5.42092em;
+    font-size: 4.92811em;
   }
 
   /* line 16, sass/main.scss */
@@ -38,51 +38,10 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 1.9em;
+    font-size: 1.57025em;
   }
 }
 @media only screen and (max-width: 1900px) {
-  /* line 13, sass/main.scss */
-  h1 {
-    font-size: 4.92811em;
-  }
-
-  /* line 16, sass/main.scss */
-  h2 {
-    font-size: 3.70256em;
-  }
-
-  /* line 19, sass/main.scss */
-  h3 {
-    font-size: 2.5289em;
-  }
-
-  /* line 22, sass/main.scss */
-  h4 {
-    font-size: 1.72727em;
-  }
-
-  /* line 25, sass/main.scss */
-  h5 {
-    font-size: 1.4275em;
-  }
-
-  /* line 28, sass/main.scss */
-  h6 {
-    font-size: 1.17975em;
-  }
-
-  /* line 31, sass/main.scss */
-  p {
-    font-size: 1.17975em;
-  }
-
-  /* line 34, sass/main.scss */
-  td, th {
-    font-size: 1.72727em;
-  }
-}
-@media only screen and (max-width: 1440px) {
   /* line 13, sass/main.scss */
   h1 {
     font-size: 4.4801em;
@@ -90,6 +49,47 @@
 
   /* line 16, sass/main.scss */
   h2 {
+    font-size: 3.70256em;
+  }
+
+  /* line 19, sass/main.scss */
+  h3 {
+    font-size: 2.5289em;
+  }
+
+  /* line 22, sass/main.scss */
+  h4 {
+    font-size: 1.72727em;
+  }
+
+  /* line 25, sass/main.scss */
+  h5 {
+    font-size: 1.4275em;
+  }
+
+  /* line 28, sass/main.scss */
+  h6 {
+    font-size: 1.17975em;
+  }
+
+  /* line 31, sass/main.scss */
+  p {
+    font-size: 1.17975em;
+  }
+
+  /* line 34, sass/main.scss */
+  td, th {
+    font-size: 1.4275em;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  /* line 13, sass/main.scss */
+  h1 {
+    font-size: 4.07282em;
+  }
+
+  /* line 16, sass/main.scss */
+  h2 {
     font-size: 3.36597em;
   }
 
@@ -120,13 +120,13 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 1.57025em;
+    font-size: 1.29773em;
   }
 }
 @media only screen and (max-width: 1200px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 4.07282em;
+    font-size: 3.70256em;
   }
 
   /* line 16, sass/main.scss */
@@ -161,13 +161,13 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 1.4275em;
+    font-size: 1.17975em;
   }
 }
 @media only screen and (max-width: 992px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 3.70256em;
+    font-size: 3.36597em;
   }
 
   /* line 16, sass/main.scss */
@@ -202,13 +202,13 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 1.29773em;
+    font-size: 1.0725em;
   }
 }
 @media only screen and (max-width: 768px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 3.36597em;
+    font-size: 3.05997em;
   }
 
   /* line 16, sass/main.scss */
@@ -243,13 +243,13 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 1.17975em;
+    font-size: 0.975em;
   }
 }
 @media only screen and (max-width: 480px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 3.05997em;
+    font-size: 2.78179em;
   }
 
   /* line 16, sass/main.scss */
@@ -284,13 +284,13 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 1.0725em;
+    font-size: 0.88636em;
   }
 }
 @media only screen and (max-width: 320px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 2.78179em;
+    font-size: 2.5289em;
   }
 
   /* line 16, sass/main.scss */
@@ -325,73 +325,75 @@
 
   /* line 34, sass/main.scss */
   td, th {
-    font-size: 0.975em;
+    font-size: 0.80579em;
   }
 }
 /*--------------------------  END MEDIA REQUEST  --------------------------*/
 /* ╨Я╨╡╤А╨╡╤Е╨╛╨┤ */
 /*╨б╨║╤А╤Г╨│╨╗╨╡╨╜╨╜╤Л╨╡ ╤Г╨│╨╗╤Л*/
 /*╨Ъ╨╜╨╛╨┐╨║╨░*/
-/* line 91, sass/main.scss */
+/* line 83, sass/main.scss */
 .inline-block {
   display: inline-block;
   vertical-align: top;
 }
-/* line 94, sass/main.scss */
+/* line 86, sass/main.scss */
 .inline-block-bottom {
   display: inline-block;
   vertical-align: bottom;
 }
 
-/* line 99, sass/main.scss */
+/* line 91, sass/main.scss */
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: red;
 }
 
-/* line 103, sass/main.scss */
+/* line 95, sass/main.scss */
 body input:required:valid,
 body textarea:required:valid {
   color: green;
 }
 
-/* line 107, sass/main.scss */
+/* line 99, sass/main.scss */
 body {
   min-height: 100%;
   position: relative;
-  font-size: 16px;
+  line-height: 1.47;
+  font-family: 'CleanvertisingLight','RobotoRegular',"Open Sans", Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  font-size: 18px;
 }
 
-/* line 112, sass/main.scss */
+/* line 107, sass/main.scss */
 input {
   margin: 0;
   border: 0;
 }
 
-/* line 116, sass/main.scss */
+/* line 111, sass/main.scss */
 button, html, input, select, textarea {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 121, sass/main.scss */
+/* line 115, sass/main.scss */
 a:hover {
   -o-transition: color .1s ease;
   transition: color .1s ease;
 }
 
-/* line 125, sass/main.scss */
+/* line 119, sass/main.scss */
 .disable-hover, .disable-hover * {
   pointer-events: none !important;
 }
 
-/* line 128, sass/main.scss */
+/* line 122, sass/main.scss */
 a {
   color: #004d99;
   text-decoration: none;
 }
-/* line 131, sass/main.scss */
+/* line 125, sass/main.scss */
 a:hover {
   color: #06c;
   text-decoration: underline;
@@ -399,31 +401,31 @@ a:hover {
   transition: color .1s ease;
 }
 
-/* line 139, sass/main.scss */
+/* line 133, sass/main.scss */
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 143, sass/main.scss */
+/* line 137, sass/main.scss */
 *:-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 147, sass/main.scss */
+/* line 141, sass/main.scss */
 *::-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 151, sass/main.scss */
+/* line 145, sass/main.scss */
 *:-ms-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 156, sass/main.scss */
+/* line 150, sass/main.scss */
 html.js .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -436,7 +438,7 @@ html.js .loader {
   z-index: 999;
 }
 
-/* line 167, sass/main.scss */
+/* line 161, sass/main.scss */
 html.js .loader_inner {
   background-image: url("../img/preloader.gif");
   background-size: cover;
@@ -452,7 +454,7 @@ html.js .loader_inner {
   position: absolute;
 }
 
-/* line 183, sass/main.scss */
+/* line 177, sass/main.scss */
 button,
 button:active,
 button:focus,
@@ -464,4 +466,244 @@ input {
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+/* line 189, sass/main.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 192, sass/main.scss */
+.visible {
+  opacity: 1;
+}
+
+/* line 223, sass/main.scss */
+.act-btn {
+  background-color: #34b3a0;
+  border-color: #34b3a0;
+}
+/* line 226, sass/main.scss */
+.act-btn:hover:not(:disabled) {
+  cursor: pointer;
+  background-color: #46c9b6;
+  border-color: #46c9b6;
+}
+/* line 231, sass/main.scss */
+.act-btn:active:not(:disabled) {
+  background-color: #2b9384;
+  border-color: #2b9384;
+}
+/* line 235, sass/main.scss */
+.act-btn:disabled {
+  cursor: crosshair;
+  background-color: rgba(70, 201, 182, 0.3);
+  border-color: rgba(70, 201, 182, 0.3);
+}
+
+/* line 242, sass/main.scss */
+hr {
+  border-bottom: 1px solid #999999;
+  width: 230px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  clear: both;
+  height: 0;
+}
+
+/* line 252, sass/main.scss */
+header .logo {
+  width: 25%;
+  margin: 10px;
+}
+/* line 257, sass/main.scss */
+header .js-first-screen {
+  background-color: #e9eaea;
+  min-height: 66vh;
+  text-align: center;
+  padding: 5vh 0;
+}
+/* line 262, sass/main.scss */
+header .js-first-screen .monitor {
+  width: 50%;
+  min-width: 250px;
+  margin: 1.7em auto;
+}
+/* line 267, sass/main.scss */
+header .js-first-screen h4 {
+  color: #959696;
+  margin: 0.7em auto;
+}
+/* line 271, sass/main.scss */
+header .js-first-screen form {
+  margin: 0.7em auto;
+}
+/* line 273, sass/main.scss */
+header .js-first-screen form input {
+  width: 60%;
+  display: inline-block;
+  padding: 0.8rem 0;
+  line-height: 1.5em;
+  min-width: 250px;
+}
+/* line 279, sass/main.scss */
+header .js-first-screen form input[type="text"], header .js-first-screen form input[type="tel"], header .js-first-screen form input[type="email"] {
+  margin: 0;
+  text-indent: 0.8rem;
+  background-color: white;
+  border: 1px solid rgba(74, 74, 76, 0.5) !important;
+  outline: none;
+}
+/* line 288, sass/main.scss */
+header .js-first-screen form input[type="submit"] {
+  margin-top: 1.6em;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+/* line 298, sass/main.scss */
+.main section {
+  padding: 70px 0;
+}
+/* line 301, sass/main.scss */
+.main .why-study-pogramming {
+  background-color: #fff;
+  text-align: center;
+}
+/* line 304, sass/main.scss */
+.main .why-study-pogramming hr {
+  color: #333;
+}
+/* line 307, sass/main.scss */
+.main .why-study-pogramming .circle {
+  display: block;
+  position: relative;
+  background-color: #414b58;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 180px;
+  max-height: 180px;
+  width: 30vw;
+  height: 30vw;
+  margin: 25px auto 30px auto;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border: 10px solid rgba(33, 38, 44, 0.3);
+}
+/* line 320, sass/main.scss */
+.main .why-study-pogramming .circle .picture {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  color: #fff;
+  font-size: 60px;
+  display: table;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 332, sass/main.scss */
+.main .why-study-pogramming .circle .picture .fa {
+  display: inline-block;
+  position: static;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 341, sass/main.scss */
+.main .why-study-pogramming .item p {
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+/* line 348, sass/main.scss */
+footer .take-email {
+  background-image: url("../img/testimonialsBG.png");
+  background-position: top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4em 0;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 358, sass/main.scss */
+footer .take-email p {
+  margin-bottom: 2em;
+}
+/* line 361, sass/main.scss */
+footer .take-email form {
+  margin: 2em auto;
+  color: #fff;
+  min-width: 290px;
+}
+/* line 366, sass/main.scss */
+footer .take-email .large-input-side {
+  min-width: 30%;
+  outline: none;
+  border: 5px solid #fff;
+  color: #111;
+}
+/* line 371, sass/main.scss */
+footer .take-email .large-input-side:focus {
+  border-color: #34b3a0;
+}
+/* line 375, sass/main.scss */
+footer .take-email .large-input-side, footer .take-email .large-btn-side {
+  padding: 20px;
+  display: inline-block;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-appearance: none;
+}
+@media only screen and (max-width: 480px) {
+  /* line 375, sass/main.scss */
+  footer .take-email .large-input-side, footer .take-email .large-btn-side {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+/* line 385, sass/main.scss */
+footer .take-email .large-btn-side {
+  min-width: 10%;
+  margin-left: -5px;
+  border: 5px solid #34b3a0;
+  text-transform: uppercase;
+}
+/* line 392, sass/main.scss */
+footer .contacts {
+  background-color: #333;
+  min-height: 30vh;
+  max-height: 300px;
 }

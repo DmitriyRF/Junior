@@ -1,6 +1,6 @@
 @import "bourbon/bourbon";
 
-$main-font-size: 16px;
+$main-font-size: 18px;
 /*--------------------------  START MEDIA REQUEST  --------------------------*/
 $modular-scale-ratio: 1.1; //$golden=1.618 //bourbon
 $modular-scale-base: 1.9em; //bourbon
@@ -11,7 +11,7 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 	@if map_has_key($max-screen-width, screen#{$i}){
 		@media only screen and (max-width :  map_get($max-screen-width, screen#{$i})){
 			h1{
-				font-size: modular-scale(11 - $i); //bourbon function
+				font-size: modular-scale(10 - $i); //bourbon function
 			}
 			h2{
 				font-size: modular-scale(8 - $i); //bourbon function
@@ -32,7 +32,7 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 				font-size: modular-scale(-4 - $i); //bourbon function
 			}
 			td, th{
-				font-size: modular-scale(0 - $i); //bourbon function
+				font-size: modular-scale(-2 - $i); //bourbon function
 			}
 		}
 	}
@@ -56,27 +56,19 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 }
 /*Кнопка*/
 @mixin my-button(){
-	padding: 1px 1px 1px 3px;
-	border-radius: 5px;
-	border: none;
-	display: inline-block;
-	text-decoration: none;
 	outline: none;
 	/*Градиент*/
-	@include background-image(linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%));//bourbon mixin
-	@include my-box-shadow(0 1px rgba(255,255,255,.2) inset,0 3px 5px rgba(0,1,6,.5),0 0 1px 1px rgba(0,1,6,.2));
-	text-shadow: 0 -1px 1px #777;
-
+	// @include background-image(linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%));//bourbon mixin
+	@include my-box-shadow(0 0 1px rgba(255,255,255,.2) inset,0 3px 5px rgba(0,1,6,.5));
  	&:hover:not(:disabled){
  		top: -0.1em;
 		left: -0.1em;
-		@include my-box-shadow(0 0 2px rgba(255,255,255,.3) inset,0 4px 6px rgba(0,1,6,.6),0 2px 2px rgba(0,1,6,.3));
-
+		@include my-box-shadow(0 0 2px rgba(255,255,255,.3) inset,0 4px 6px rgba(0,1,6,.6));
 	}
 	&:active:not(:disabled){
 		top: 0.1em;
 		left: 0.1em;
-		@include my-box-shadow(0 0 1px rgba(0,0,0,.5) inset,0 2px 3px rgba(0,0,0,.5) inset,0 1px 1px rgba(255,255,255,.1))
+		@include my-box-shadow(0 0 1px rgba(0,0,0,.5) inset,0 2px 3px rgba(0,0,0,.5) inset)
 	}
 	&:disabled{}
 	
@@ -107,6 +99,9 @@ body textarea:required:valid{
 body {
 	min-height: 100%;
 	position: relative;
+	line-height: 1.47;
+	font-family: 'CleanvertisingLight','RobotoRegular',"Open Sans", Arial, Helvetica, sans-serif;
+	min-width: 320px;
 	font-size: $main-font-size;
 }
 input {
@@ -114,7 +109,6 @@ input {
 	border: 0;
 }
 button, html, input, select, textarea {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -192,19 +186,213 @@ input{
 	-webkit-user-select: none;
 	user-select: none;
 }
+.hidden{
+	opacity:0;
+}
+.visible{
+	opacity:1;
+}
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-$color1: #FF7100;
-$color2: #FFB000;
-$color3: #1437AD;
-$color4: #009B95;
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+$color_simple: rgb(52, 179, 160);
+$color_hover: rgb(70, 201, 182);
+$color_active: rgb(43, 147, 132);
+$color_disabled: rgba(70, 201, 182, 0.3);
 
 $color5: #DF9A62;
 $color6: #DFB862;
 $color7: #4C5E97;
 $color8: #3C8885;
 
-$textcolor: #204056;
-header{
+$textcolor1: #204056;
+$textcolor2: #f65a5b;
+$headerbgc: #e9eaea;
+
+.act-btn{
+	background-color: $color_simple;
+	border-color: $color_simple;
+	&:hover:not(:disabled){
+		cursor: pointer;
+		background-color: $color_hover;
+		border-color: $color_hover;
+	}
+	&:active:not(:disabled){
+		background-color: $color_active;
+		border-color: $color_active;
+	}
+	&:disabled{
+		cursor: crosshair;
+		background-color: $color_disabled;
+		border-color: $color_disabled;
+	}
 	
+}
+	hr{
+		border-bottom: 1px solid #999999;
+		width: 230px;
+		margin: 20px auto;
+		text-align: center;
+		border: 1px solid #ccc;
+		clear: both;
+		height: 0;
+	}
+header{
+	.logo{
+		// width: 150px;
+		width: 25%;
+		margin: 10px;
+	}
+	.js-first-screen{
+		background-color: $headerbgc;
+		min-height: 66vh;
+		text-align: center;
+		padding: 5vh 0;
+		.monitor{
+			width: 50%;
+			min-width: 250px;
+			margin: 1.7em auto;
+		}
+		h4{
+			color: #959696;
+			margin: 0.7em auto;
+		}
+		form{
+			margin: 0.7em auto;
+			input{
+				width: 60%;
+				display: inline-block;
+				padding: 0.8rem 0;
+				line-height: 1.5em;
+				min-width: 250px;
+				&[type="text"],
+				&[type="tel"],
+				&[type="email"]{
+					margin: 0;
+					text-indent: 0.8rem;
+					background-color: white;
+					border: 1px solid rgba(74,74,76,0.5) !important;
+					outline: none;
+				}
+				&[type="submit"]{
+					margin-top: 1.6em;
+					text-transform: uppercase;
+					border-radius:0;
+				}
+			}
+		}
+	}
+}
+.main{
+	section{
+		padding: 70px 0;
+	}
+	.why-study-pogramming{
+		background-color: #fff;
+		text-align: center;
+		hr{
+			color: #333;
+		}
+		.circle{
+			display: block;
+			position: relative;
+			background-color: #414b58;
+			min-width: 150px;
+			min-height: 150px;
+			max-width: 180px;
+			max-height: 180px;
+			width: 30vw;
+			height: 30vw;
+			margin: 25px auto 30px auto;
+			@include my-border-radius(50%);
+			border: 10px solid rgba(33,38,44,0.3);
+			.picture{
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				left: 50%;
+				top: 50%;
+				margin-left: -50px;
+				margin-top: -50px;
+				color: #fff;
+				font-size: 60px;
+				display: table;
+				@include my-transition(0.3s);
+				.fa{
+					display: inline-block;
+					position: static;
+					text-align: center;
+					display: table-cell;
+    				vertical-align: middle;
+				}
+			}
+		}
+		.item p{
+			max-width: 230px;
+			margin: 0 auto;
+		}
+	}
+}
+footer{
+	.take-email{
+		background-image: url("../img/testimonialsBG.png");
+		background-position: top center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 4em 0;
+		color: #fff;
+		text-align: center;
+		vertical-align: middle;
+		p{
+			margin-bottom: 2em;
+		}
+		form{
+			margin: 2em auto;
+			color: #fff;
+			min-width: 290px;
+		}
+		.large-input-side {
+			min-width: 30%;
+			outline: none;
+			border: 5px solid #fff;
+			color: #111;
+			&:focus {
+			    border-color: $color_simple;
+			}
+		}
+		.large-input-side, .large-btn-side {
+			padding: 20px;
+			@media only screen and (max-width : 480px){
+				padding: 5px;
+				font-size: 16px;
+			}
+			display: inline-block;
+			@include my-transition(0.3s);
+			-webkit-appearance: none;
+		}
+		.large-btn-side {
+		    min-width: 10%;
+		    margin-left: -5px;
+		    border: 5px solid $color_simple;
+		    text-transform: uppercase;  
+		}
+	}
+	.contacts{
+		background-color: #333;
+		min-height: 30vh;
+		max-height: 300px;
+	}
 
 }
