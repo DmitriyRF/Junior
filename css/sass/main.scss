@@ -1,6 +1,6 @@
 @import "bourbon/bourbon";
 
-$main-font-size: 18px;
+$main-font-size: 16px;
 /*--------------------------  START MEDIA REQUEST  --------------------------*/
 $modular-scale-ratio: 1.1; //$golden=1.618 //bourbon
 $modular-scale-base: 1.9em; //bourbon
@@ -11,13 +11,13 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 	@if map_has_key($max-screen-width, screen#{$i}){
 		@media only screen and (max-width :  map_get($max-screen-width, screen#{$i})){
 			h1{
-				font-size: modular-scale(10 - $i); //bourbon function
+				font-size: modular-scale(6 - $i); //bourbon function
 			}
 			h2{
-				font-size: modular-scale(8 - $i); //bourbon function
+				font-size: modular-scale(4 - $i); //bourbon function
 			}
 			h3{
-				font-size: modular-scale(4 - $i); //bourbon function
+				font-size: modular-scale(2 - $i); //bourbon function
 			}
 			h4{
 				font-size: modular-scale(0 - $i); //bourbon function
@@ -42,9 +42,9 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 /* Переход */
 @mixin  my-transition($transition_time){
 	@include transition-property(all);//bourbon mixin
-	@include transition-duration(0s);//bourbon mixin
+	@include transition-duration($transition_time);//bourbon mixin
 	@include transition-timing-function(ease);//bourbon mixin
-	@include transition-delay($transition_time);//bourbon mixin
+	@include transition-delay(0s);//bourbon mixin
 }
 
 /*Скругленные углы*/
@@ -239,6 +239,28 @@ $headerbgc: #e9eaea;
 	}
 	
 }
+.act-btn-dark{
+	background-color: #fff;
+	border-color: #fff;;
+	color: $textcolor1;
+	&:hover:not(:disabled){
+		cursor: pointer;
+		background-color: $color_hover;
+		border-color: $color_hover;
+		color: #fff;
+	}
+	&:active:not(:disabled){
+		background-color: $color_active;
+		border-color: $color_active;
+		color: #fff;
+	}
+	&:disabled{
+		cursor: crosshair;
+		background-color: $color_disabled;
+		border-color: $color_disabled;
+	}
+	
+}
 	hr{
 		border-bottom: 1px solid #999999;
 		width: 230px;
@@ -264,12 +286,12 @@ header{
 			min-width: 250px;
 			margin: 1.7em auto;
 		}
-		h4{
+
+		form{	
+			h4{
 			color: #959696;
-			margin: 0.7em auto;
-		}
-		form{
-			margin: 0.7em auto;
+			margin: 1.7em auto 1em;
+			}
 			input{
 				width: 60%;
 				display: inline-block;
@@ -308,15 +330,23 @@ header{
 			display: block;
 			position: relative;
 			background-color: #414b58;
-			min-width: 150px;
-			min-height: 150px;
+			min-width: 110px;
+			min-height: 110px;
 			max-width: 180px;
 			max-height: 180px;
 			width: 30vw;
 			height: 30vw;
 			margin: 25px auto 30px auto;
 			@include my-border-radius(50%);
+			@include my-transition(0.2s);
 			border: 10px solid rgba(33,38,44,0.3);
+			&:hover{
+				background-color: #3b444f;
+				border-color: #6d7d92;
+				.picture{
+					font-size: 70px;
+				}
+			}
 			.picture{
 				position: absolute;
 				width: 100px;
@@ -328,7 +358,11 @@ header{
 				color: #fff;
 				font-size: 60px;
 				display: table;
-				@include my-transition(0.3s);
+				@include my-transition(0.2s);
+				@media only screen and (max-width: 480px){
+					font-size: 45px;
+				}
+				
 				.fa{
 					display: inline-block;
 					position: static;
@@ -342,6 +376,150 @@ header{
 			max-width: 230px;
 			margin: 0 auto;
 		}
+	}
+	.our-offers{
+		background-color: $headerbgc;
+		text-align: center;
+		hr{
+			color: #333;
+		}
+		.offer{
+			height: 74vh;
+			min-height: 450px;
+			padding: 1em;
+			margin-bottom: 2em;
+			@include my-transition(0.2s);
+			@media only screen and (max-width: 480px){
+				min-height: 75vh;
+			}
+			.img-wrapper{
+				margin: 2em auto 1em auto;
+				width: 175px;
+				height: 175px;
+				overflow: hidden;
+				@media only screen and (min-width: 992px) and (max-width: 1200px){
+				width: 145px;
+				height: 145px;
+				}
+			}
+			.tone{
+				background-color: rgba(52, 179, 160, 0.4);
+				width:100%;
+				height:100%;
+				display: block;
+			}
+			.sprite{
+				display: block;
+				height: 175px;
+				width: 175px;				
+				@media only screen and (min-width: 992px) and (max-width: 1200px){
+					width: 145px;
+					height: 145px;
+				}
+				overflow: hidden;
+				background-image:url("../img/offer-black.jpg");
+				@include my-transition(0.2s);
+			}
+			&:hover .sprite,&:active .sprite{
+				background-image:url("../img/offer.jpg");
+			}
+			.apart-1{
+				background-position: -25px -18px;
+			}
+			.apart-2{
+				background-position: 201px -12px;
+			}
+			.apart-3{
+				background-position: 200px 201px;
+			}
+
+		}
+	}
+	.video-block{
+		.video-description{
+			display: block;
+			margin: 3em 1em 3em 0;
+			@media only screen and (min-width: 1400px){
+				margin: 6em 1em 3em 3em;
+			}
+			@media only screen and (min-width: 1900px){
+				margin: 9em 1em 3em 4em;
+			}
+			@media only screen and (min-width: 2500px){
+				margin: 13em 1em 3em 5em;
+			}
+			text-align: right;
+			@media only screen and (max-width: 992px){
+				text-align: center;
+				margin: 1em 1em;
+			}
+
+		}
+		.youtube-video{
+			@media only screen and (min-width: 992px){
+				margin: 0 1em 0 0;
+			}
+			@media only screen and (min-width: 1400px){
+				margin: 0 6em 0 0;
+			}
+			@media only screen and (min-width: 1900px){
+				margin: 0 9em 0 0;
+			}
+			@media only screen and (min-width: 2500px){
+				margin: 0 13em 0 0;
+			}
+			iframe{
+				width: 100%;
+				margin: 0 auto;
+				min-height: 315px;
+				@media only screen and (min-width: 1400px){
+					min-height: 415px;
+				}
+				@media only screen and (min-width: 1900px){
+					min-height: 615px;
+				}
+				@media only screen and (min-width: 2500px){
+					min-height: 715px;
+				}
+			}
+		}
+
+	}
+	.how-we-work{
+		padding: 0;
+		border-top: 1px solid rgba(3,3,3,0.3);
+		text-align: center;
+		.display-table{
+			height: 80vh;
+		}
+		@for $j from 1 through 6 {
+			.stage-#{$j} {
+				background-color: #aadae0 + #111111 * $j / 3;
+				height: 100%;
+				
+			}
+		}
+		.content{
+			padding: 7vh 0;
+			overflow: hidden;
+		}
+		.img-step{
+			margin: 4vh auto;
+			width: 100%;
+			i{
+				font-size: 5em;
+				@media only screen and (max-width: 768px){
+					font-size: 3em;
+				}
+
+			}
+		}
+		.p-step{
+			margin: 4vh 5%;
+			position: bottom;
+
+		}
+
 	}
 }
 footer{

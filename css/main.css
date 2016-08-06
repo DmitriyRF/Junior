@@ -3,17 +3,17 @@
 @media only screen and (max-width: 2600px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 4.92811em;
+    font-size: 3.36597em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 4.07282em;
+    font-size: 2.78179em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 2.78179em;
+    font-size: 2.299em;
   }
 
   /* line 22, sass/main.scss */
@@ -44,17 +44,17 @@
 @media only screen and (max-width: 1900px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 4.4801em;
+    font-size: 3.05997em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 3.70256em;
+    font-size: 2.5289em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 2.5289em;
+    font-size: 2.09em;
   }
 
   /* line 22, sass/main.scss */
@@ -85,17 +85,17 @@
 @media only screen and (max-width: 1440px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 4.07282em;
+    font-size: 2.78179em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 3.36597em;
+    font-size: 2.299em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 2.299em;
+    font-size: 1.9em;
   }
 
   /* line 22, sass/main.scss */
@@ -126,17 +126,17 @@
 @media only screen and (max-width: 1200px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 3.70256em;
+    font-size: 2.5289em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 3.05997em;
+    font-size: 2.09em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 2.09em;
+    font-size: 1.72727em;
   }
 
   /* line 22, sass/main.scss */
@@ -167,17 +167,17 @@
 @media only screen and (max-width: 992px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 3.36597em;
+    font-size: 2.299em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 2.78179em;
+    font-size: 1.9em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 1.9em;
+    font-size: 1.57025em;
   }
 
   /* line 22, sass/main.scss */
@@ -208,17 +208,17 @@
 @media only screen and (max-width: 768px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 3.05997em;
+    font-size: 2.09em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 2.5289em;
+    font-size: 1.72727em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 1.72727em;
+    font-size: 1.4275em;
   }
 
   /* line 22, sass/main.scss */
@@ -249,17 +249,17 @@
 @media only screen and (max-width: 480px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 2.78179em;
+    font-size: 1.9em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 2.299em;
+    font-size: 1.57025em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 1.57025em;
+    font-size: 1.29773em;
   }
 
   /* line 22, sass/main.scss */
@@ -290,17 +290,17 @@
 @media only screen and (max-width: 320px) {
   /* line 13, sass/main.scss */
   h1 {
-    font-size: 2.5289em;
+    font-size: 1.72727em;
   }
 
   /* line 16, sass/main.scss */
   h2 {
-    font-size: 2.09em;
+    font-size: 1.4275em;
   }
 
   /* line 19, sass/main.scss */
   h3 {
-    font-size: 1.4275em;
+    font-size: 1.17975em;
   }
 
   /* line 22, sass/main.scss */
@@ -362,7 +362,7 @@ body {
   line-height: 1.47;
   font-family: 'CleanvertisingLight','RobotoRegular',"Open Sans", Arial, Helvetica, sans-serif;
   min-width: 320px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* line 107, sass/main.scss */
@@ -502,6 +502,32 @@ input {
 }
 
 /* line 242, sass/main.scss */
+.act-btn-dark {
+  background-color: #fff;
+  border-color: #fff;
+  color: #204056;
+}
+/* line 246, sass/main.scss */
+.act-btn-dark:hover:not(:disabled) {
+  cursor: pointer;
+  background-color: #46c9b6;
+  border-color: #46c9b6;
+  color: #fff;
+}
+/* line 252, sass/main.scss */
+.act-btn-dark:active:not(:disabled) {
+  background-color: #2b9384;
+  border-color: #2b9384;
+  color: #fff;
+}
+/* line 257, sass/main.scss */
+.act-btn-dark:disabled {
+  cursor: crosshair;
+  background-color: rgba(70, 201, 182, 0.3);
+  border-color: rgba(70, 201, 182, 0.3);
+}
+
+/* line 264, sass/main.scss */
 hr {
   border-bottom: 1px solid #999999;
   width: 230px;
@@ -512,34 +538,30 @@ hr {
   height: 0;
 }
 
-/* line 252, sass/main.scss */
+/* line 274, sass/main.scss */
 header .logo {
   width: 25%;
   margin: 10px;
 }
-/* line 257, sass/main.scss */
+/* line 279, sass/main.scss */
 header .js-first-screen {
   background-color: #e9eaea;
   min-height: 66vh;
   text-align: center;
   padding: 5vh 0;
 }
-/* line 262, sass/main.scss */
+/* line 284, sass/main.scss */
 header .js-first-screen .monitor {
   width: 50%;
   min-width: 250px;
   margin: 1.7em auto;
 }
-/* line 267, sass/main.scss */
-header .js-first-screen h4 {
+/* line 291, sass/main.scss */
+header .js-first-screen form h4 {
   color: #959696;
-  margin: 0.7em auto;
+  margin: 1.7em auto 1em;
 }
-/* line 271, sass/main.scss */
-header .js-first-screen form {
-  margin: 0.7em auto;
-}
-/* line 273, sass/main.scss */
+/* line 295, sass/main.scss */
 header .js-first-screen form input {
   width: 60%;
   display: inline-block;
@@ -547,7 +569,7 @@ header .js-first-screen form input {
   line-height: 1.5em;
   min-width: 250px;
 }
-/* line 279, sass/main.scss */
+/* line 301, sass/main.scss */
 header .js-first-screen form input[type="text"], header .js-first-screen form input[type="tel"], header .js-first-screen form input[type="email"] {
   margin: 0;
   text-indent: 0.8rem;
@@ -555,33 +577,33 @@ header .js-first-screen form input[type="text"], header .js-first-screen form in
   border: 1px solid rgba(74, 74, 76, 0.5) !important;
   outline: none;
 }
-/* line 288, sass/main.scss */
+/* line 310, sass/main.scss */
 header .js-first-screen form input[type="submit"] {
   margin-top: 1.6em;
   text-transform: uppercase;
   border-radius: 0;
 }
 
-/* line 298, sass/main.scss */
+/* line 320, sass/main.scss */
 .main section {
   padding: 70px 0;
 }
-/* line 301, sass/main.scss */
+/* line 323, sass/main.scss */
 .main .why-study-pogramming {
   background-color: #fff;
   text-align: center;
 }
-/* line 304, sass/main.scss */
+/* line 326, sass/main.scss */
 .main .why-study-pogramming hr {
   color: #333;
 }
-/* line 307, sass/main.scss */
+/* line 329, sass/main.scss */
 .main .why-study-pogramming .circle {
   display: block;
   position: relative;
   background-color: #414b58;
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 110px;
+  min-height: 110px;
   max-width: 180px;
   max-height: 180px;
   width: 30vw;
@@ -595,9 +617,30 @@ header .js-first-screen form input[type="submit"] {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
   border: 10px solid rgba(33, 38, 44, 0.3);
 }
-/* line 320, sass/main.scss */
+/* line 343, sass/main.scss */
+.main .why-study-pogramming .circle:hover {
+  background-color: #3b444f;
+  border-color: #6d7d92;
+}
+/* line 346, sass/main.scss */
+.main .why-study-pogramming .circle:hover .picture {
+  font-size: 70px;
+}
+/* line 350, sass/main.scss */
 .main .why-study-pogramming .circle .picture {
   position: absolute;
   width: 100px;
@@ -612,17 +655,23 @@ header .js-first-screen form input[type="submit"] {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  transition-duration: 0s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: ease;
   -moz-transition-timing-function: ease;
   transition-timing-function: ease;
-  -webkit-transition-delay: 0.3s;
-  -moz-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
 }
-/* line 332, sass/main.scss */
+@media only screen and (max-width: 480px) {
+  /* line 350, sass/main.scss */
+  .main .why-study-pogramming .circle .picture {
+    font-size: 45px;
+  }
+}
+/* line 366, sass/main.scss */
 .main .why-study-pogramming .circle .picture .fa {
   display: inline-block;
   position: static;
@@ -630,13 +679,255 @@ header .js-first-screen form input[type="submit"] {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 341, sass/main.scss */
+/* line 375, sass/main.scss */
 .main .why-study-pogramming .item p {
   max-width: 230px;
   margin: 0 auto;
 }
+/* line 380, sass/main.scss */
+.main .our-offers {
+  background-color: #e9eaea;
+  text-align: center;
+}
+/* line 383, sass/main.scss */
+.main .our-offers hr {
+  color: #333;
+}
+/* line 386, sass/main.scss */
+.main .our-offers .offer {
+  height: 74vh;
+  min-height: 450px;
+  padding: 1em;
+  margin-bottom: 2em;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@media only screen and (max-width: 480px) {
+  /* line 386, sass/main.scss */
+  .main .our-offers .offer {
+    min-height: 75vh;
+  }
+}
+/* line 395, sass/main.scss */
+.main .our-offers .offer .img-wrapper {
+  margin: 2em auto 1em auto;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 395, sass/main.scss */
+  .main .our-offers .offer .img-wrapper {
+    width: 145px;
+    height: 145px;
+  }
+}
+/* line 405, sass/main.scss */
+.main .our-offers .offer .tone {
+  background-color: rgba(52, 179, 160, 0.4);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 411, sass/main.scss */
+.main .our-offers .offer .sprite {
+  display: block;
+  height: 175px;
+  width: 175px;
+  overflow: hidden;
+  background-image: url("../img/offer-black.jpg");
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 411, sass/main.scss */
+  .main .our-offers .offer .sprite {
+    width: 145px;
+    height: 145px;
+  }
+}
+/* line 423, sass/main.scss */
+.main .our-offers .offer:hover .sprite, .main .our-offers .offer:active .sprite {
+  background-image: url("../img/offer.jpg");
+}
+/* line 426, sass/main.scss */
+.main .our-offers .offer .apart-1 {
+  background-position: -25px -18px;
+}
+/* line 429, sass/main.scss */
+.main .our-offers .offer .apart-2 {
+  background-position: 201px -12px;
+}
+/* line 432, sass/main.scss */
+.main .our-offers .offer .apart-3 {
+  background-position: 200px 201px;
+}
+/* line 439, sass/main.scss */
+.main .video-block .video-description {
+  display: block;
+  margin: 3em 1em 3em 0;
+  text-align: right;
+}
+@media only screen and (min-width: 1400px) {
+  /* line 439, sass/main.scss */
+  .main .video-block .video-description {
+    margin: 6em 1em 3em 3em;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  /* line 439, sass/main.scss */
+  .main .video-block .video-description {
+    margin: 9em 1em 3em 4em;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  /* line 439, sass/main.scss */
+  .main .video-block .video-description {
+    margin: 13em 1em 3em 5em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 439, sass/main.scss */
+  .main .video-block .video-description {
+    text-align: center;
+    margin: 1em 1em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 458, sass/main.scss */
+  .main .video-block .youtube-video {
+    margin: 0 1em 0 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  /* line 458, sass/main.scss */
+  .main .video-block .youtube-video {
+    margin: 0 6em 0 0;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  /* line 458, sass/main.scss */
+  .main .video-block .youtube-video {
+    margin: 0 9em 0 0;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  /* line 458, sass/main.scss */
+  .main .video-block .youtube-video {
+    margin: 0 13em 0 0;
+  }
+}
+/* line 471, sass/main.scss */
+.main .video-block .youtube-video iframe {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 315px;
+}
+@media only screen and (min-width: 1400px) {
+  /* line 471, sass/main.scss */
+  .main .video-block .youtube-video iframe {
+    min-height: 415px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  /* line 471, sass/main.scss */
+  .main .video-block .youtube-video iframe {
+    min-height: 615px;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  /* line 471, sass/main.scss */
+  .main .video-block .youtube-video iframe {
+    min-height: 715px;
+  }
+}
+/* line 488, sass/main.scss */
+.main .how-we-work {
+  padding: 0;
+  border-top: 1px solid rgba(3, 3, 3, 0.3);
+  text-align: center;
+}
+/* line 492, sass/main.scss */
+.main .how-we-work .display-table {
+  height: 80vh;
+}
+/* line 496, sass/main.scss */
+.main .how-we-work .stage-1 {
+  background-color: powderblue;
+  height: 100%;
+}
+/* line 496, sass/main.scss */
+.main .how-we-work .stage-2 {
+  background-color: #b5e5eb;
+  height: 100%;
+}
+/* line 496, sass/main.scss */
+.main .how-we-work .stage-3 {
+  background-color: #bbebf1;
+  height: 100%;
+}
+/* line 496, sass/main.scss */
+.main .how-we-work .stage-4 {
+  background-color: #c1f1f7;
+  height: 100%;
+}
+/* line 496, sass/main.scss */
+.main .how-we-work .stage-5 {
+  background-color: #c6f6fc;
+  height: 100%;
+}
+/* line 496, sass/main.scss */
+.main .how-we-work .stage-6 {
+  background-color: #ccfcff;
+  height: 100%;
+}
+/* line 502, sass/main.scss */
+.main .how-we-work .content {
+  padding: 7vh 0;
+  overflow: hidden;
+}
+/* line 506, sass/main.scss */
+.main .how-we-work .img-step {
+  margin: 4vh auto;
+  width: 100%;
+}
+/* line 509, sass/main.scss */
+.main .how-we-work .img-step i {
+  font-size: 5em;
+}
+@media only screen and (max-width: 768px) {
+  /* line 509, sass/main.scss */
+  .main .how-we-work .img-step i {
+    font-size: 3em;
+  }
+}
+/* line 517, sass/main.scss */
+.main .how-we-work .p-step {
+  margin: 4vh 5%;
+  position: bottom;
+}
 
-/* line 348, sass/main.scss */
+/* line 526, sass/main.scss */
 footer .take-email {
   background-image: url("../img/testimonialsBG.png");
   background-position: top center;
@@ -648,60 +939,60 @@ footer .take-email {
   text-align: center;
   vertical-align: middle;
 }
-/* line 358, sass/main.scss */
+/* line 536, sass/main.scss */
 footer .take-email p {
   margin-bottom: 2em;
 }
-/* line 361, sass/main.scss */
+/* line 539, sass/main.scss */
 footer .take-email form {
   margin: 2em auto;
   color: #fff;
   min-width: 290px;
 }
-/* line 366, sass/main.scss */
+/* line 544, sass/main.scss */
 footer .take-email .large-input-side {
   min-width: 30%;
   outline: none;
   border: 5px solid #fff;
   color: #111;
 }
-/* line 371, sass/main.scss */
+/* line 549, sass/main.scss */
 footer .take-email .large-input-side:focus {
   border-color: #34b3a0;
 }
-/* line 375, sass/main.scss */
+/* line 553, sass/main.scss */
 footer .take-email .large-input-side, footer .take-email .large-btn-side {
   padding: 20px;
   display: inline-block;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  transition-duration: 0s;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease;
   -moz-transition-timing-function: ease;
   transition-timing-function: ease;
-  -webkit-transition-delay: 0.3s;
-  -moz-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
   -webkit-appearance: none;
 }
 @media only screen and (max-width: 480px) {
-  /* line 375, sass/main.scss */
+  /* line 553, sass/main.scss */
   footer .take-email .large-input-side, footer .take-email .large-btn-side {
     padding: 5px;
     font-size: 16px;
   }
 }
-/* line 385, sass/main.scss */
+/* line 563, sass/main.scss */
 footer .take-email .large-btn-side {
   min-width: 10%;
   margin-left: -5px;
   border: 5px solid #34b3a0;
   text-transform: uppercase;
 }
-/* line 392, sass/main.scss */
+/* line 570, sass/main.scss */
 footer .contacts {
   background-color: #333;
   min-height: 30vh;
