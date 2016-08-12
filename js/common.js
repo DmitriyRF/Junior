@@ -1,5 +1,5 @@
 +function($){
-    $(document).ready(function ($) {
+    jQuery(document).ready(function($){
 
 //Для заполнения всего начального экрана ------------+-------------------------+-------------------------+-------------
 
@@ -32,16 +32,35 @@
             return $(this).attr("src").replace(".svg", ".png");
     
 // ANIMATE + WAYPOINTS
-
-    $( "span.circle" ).hover(
+    /*Анимация элемента по клику*/
+    $("").click(function() {
+        $("").animateCss('bounce');
+    });
+    /*Анимация элемента*/
+    $("").hover(
         function() {
-            $(this).addClass('animated fadeIn');
+            $(this).addClass('animated shake');
         },
         function() {
-            $(this).removeClass('animated fadeIn');
+            $(this).removeClass('animated shake');
         }
     );
-
+    /*Анимация элемента + отслеживание окончания анимации*/
+    $("").click(function() {
+        $("").addClass('animated shake');
+    });
+    $("").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $("").addClass('fadeOut', function() {$("").hide();});
+    });
+    /*отслеживание появление элемента при скролинге к верхней точке экоана
+    плюс 90% экрана в итоге точка срабатывания анимации*/
+    $(window).scroll(function() {
+        $("").each(function(){
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height()*0.9){
+                $(this).addClass('animated wobble');
+            }
+        });
+    });
 
 
 
